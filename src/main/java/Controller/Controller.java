@@ -1,4 +1,3 @@
-
 package Controller;
 
 import dto.DTO;
@@ -20,9 +19,9 @@ public interface Controller {
 
     public void salvar(JSONObject func) throws Exception;
 
-    public void salvaDTO (DTO dto) throws Exception;
+    public void salva (DTO dto) throws Exception;
     
-    public void removerDTO (DTO dto);
+    public void remover (DTO dto);
     
-    public Object[] getDadosDTO(DTO dto);//array matriz
+    public Object[] getDados(DTO dto);//array matriz
 }

@@ -4,10 +4,10 @@ package unigran.br.projetoodonto.Cadastro;
 
 import dto.DTO;
 import dto.MateriaisDTO;
-import view.util.PainelInterface;
+import unigran.br.projetoodonto.Cadastro.Painel;
 
 
-public class CadastroMateriais extends PainelInterface {
+public class CadastroMateriais extends Painel {
 
 
     public CadastroMateriais() {

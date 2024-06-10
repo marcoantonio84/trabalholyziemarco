@@ -8,7 +8,6 @@ import unigran.br.projetoodonto.Classes.Login;
 import unigran.br.projetoodonto.Percistencia.LoginDao;
 import unigran.br.projetoodonto.Percistencia.LoginImpl;
 
-
 @Data
 public class LoginController implements Controller {
 
@@ -54,17 +53,17 @@ public class LoginController implements Controller {
     }
 
     @Override
-    public void salvaDTO(DTO dto) throws Exception {
+    public void salva(DTO dto) throws Exception {
+        dao.salvar(dto.builder());
+    }
+
+    @Override
+    public void remover(DTO dto) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void removerDTO(DTO dto) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Object[] getDadosDTO(DTO dto) {
+    public Object[] getDados(DTO dto) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 

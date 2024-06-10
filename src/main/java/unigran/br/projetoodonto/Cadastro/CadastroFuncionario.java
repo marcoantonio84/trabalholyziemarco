@@ -4,10 +4,10 @@ package unigran.br.projetoodonto.Cadastro;
 
 import dto.DTO;
 import dto.FuncionarioDTO;
-import view.util.PainelInterface;
+import unigran.br.projetoodonto.Cadastro.Painel;
 
 
-public class CadastroFuncionario extends PainelInterface {
+public class CadastroFuncionario extends Painel{
 
     public CadastroFuncionario() {
         initComponents();

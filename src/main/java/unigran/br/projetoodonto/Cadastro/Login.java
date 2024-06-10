@@ -1,13 +1,13 @@
-
 package unigran.br.projetoodonto.Cadastro;
 
 
-import controller.Controller;
+import Controller.Controller;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import org.json.JSONObject;
+import Controller.LoginController;
 
 
 public class Login extends javax.swing.JFrame {
@@ -131,7 +131,7 @@ public class Login extends javax.swing.JFrame {
         func.put("nomelogin", txLogin.getText());
         func.put("pass", txPass.getText()); // Converta char[] para String de forma segura
         func.put("tipoUsuario", mdTipoUsuario.getSelectedIndex());
-        Controller controller = new controller.LoginController();
+        Controller controller = new LoginController();
 
         try {
             controller.salvar(func);
@@ -146,14 +146,14 @@ public class Login extends javax.swing.JFrame {
         func.put("nomelogin", txLogin.getText());
         func.put("pass", txPass.getText().toString()); // Converta char[] para String de forma segura
         func.put("tipoUsuario", mdTipoUsuario.getSelectedIndex());
-        Controller controller = new controller.LoginController();
+        Controller controller = new LoginController();
 
         try {
             boolean acesso = controller.verificaExiste(func);
             if (acesso == true) {
                 JOptionPane.showMessageDialog(null, "BEM VINDO");
                 dispose();
-//                MenuPrincipal.main();
+                MenuPrincipal.main();
 
             } else {
                 JOptionPane.showMessageDialog(null, "ACESSO NEGADO");
@@ -200,8 +200,8 @@ public class Login extends javax.swing.JFrame {
             public void run() {
 
                 JFrame frame = new Login();
-                frame.setResizable(false); // Desabilita redimensionamento da janela
-                frame.setLocationRelativeTo(null); // Posiciona a janela no centro da tela
+                frame.setResizable(false); 
+                frame.setLocationRelativeTo(null); 
                 frame.setVisible(true);
             }
         });
@@ -219,4 +219,3 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField txPass;
     // End of variables declaration                   
 }
-
