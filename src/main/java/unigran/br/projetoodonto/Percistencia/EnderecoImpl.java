@@ -1,16 +1,17 @@
 package unigran.br.projetoodonto.Percistencia;
 
 import java.util.List;
-import unigran.br.projetoodonto.Classes.Funcionario;
-import unigran.br.projetoodonto.Percistencia.Dao;
+import unigran.br.projetoodonto.Classes.Endereco;
 
 
-public class FuncionarioImpl implements FuncionarioDao {
-    
+public class EnderecoImpl implements EnderecoDao{
+
     @Override
-    public List listarbyNome(String nome) {
-        return Dao.getInstace().getEm().createNativeQuery(
-                 "select * from funcionario where nome like '% :? %'",Funcionario.class)
-                .setParameter(1,nome).getResultList();
+    public Endereco existeEnd(String nome) {
+        List<Endereco> resultList = Dao.getInstace().getEm().createNativeQuery(
+                "select * from endereco  ",Endereco.class)
+                .getResultList();
+        return !resultList.isEmpty()?resultList.get(0):null;
     }
+    
 }
