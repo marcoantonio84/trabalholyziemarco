@@ -13,6 +13,8 @@ import unigran.br.projetoodonto.Classes.Paciente;
 import unigran.br.projetoodonto.Classes.UF;
 import unigran.br.projetoodonto.Percistencia.CidadeDao;
 import unigran.br.projetoodonto.Percistencia.CidadeImpl;
+import unigran.br.projetoodonto.Percistencia.ContatoDao;
+import unigran.br.projetoodonto.Percistencia.ContatoImpl;
 import unigran.br.projetoodonto.Percistencia.PacienteDao;
 import unigran.br.projetoodonto.Percistencia.PacienteImpl;
 
@@ -47,8 +49,7 @@ public class PacienteDTO extends DTO{
              if(cid == null){
                  cid =new Cidade();
                  cid.setNome(cidade);
-//                 cid.setEndereco((List<Endereco>) end);
-                 cid.setEstado(UF.valueOf(id));
+                 cid.setEstado(UF.valueOf(estado));
                  cidDao.salvar(cid);
              }
      //        end.setCidade_id(cid);
@@ -64,9 +65,12 @@ public class PacienteDTO extends DTO{
          }
          paciente.setResponsavel(responsavel);
          Contato cont = new Contato();
+         ContatoDao contDao = new ContatoImpl();
          cont.setInformacao(contato);
-         cont.setPaciente(paciente);
-         paciente.setContatos((List<Contato>) cont);
+         contDao.salvar(cont);
+//         cont.setPaciente(paciente);
+        
+         //paciente.setContatos((List<Contato>) cont);
          return paciente;
     }
     

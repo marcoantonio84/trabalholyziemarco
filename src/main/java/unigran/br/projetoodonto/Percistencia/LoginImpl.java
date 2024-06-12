@@ -1,6 +1,6 @@
 package unigran.br.projetoodonto.Percistencia;
 
-import unigran.br.projetoodonto.Cadastro.Login;
+import Telas.Login;
 import java.util.List;
 import javax.persistence.PersistenceException;
 import org.json.JSONObject;

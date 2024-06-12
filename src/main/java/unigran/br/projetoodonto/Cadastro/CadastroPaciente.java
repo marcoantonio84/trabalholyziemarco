@@ -6,7 +6,7 @@ import dto.DTO;
 import dto.PacienteDTO;
 import javax.swing.DefaultComboBoxModel;
 import unigran.br.projetoodonto.Classes.UF;
-import unigran.br.projetoodonto.Cadastro.Painel;
+import Telas.Painel;
 
 
 public class CadastroPaciente extends Painel {

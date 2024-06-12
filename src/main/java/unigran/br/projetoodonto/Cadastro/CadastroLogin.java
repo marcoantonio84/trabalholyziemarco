@@ -1,5 +1,6 @@
 package unigran.br.projetoodonto.Cadastro;
 
+import Telas.Painel;
 import dto.DTO;
 import dto.LoginDTO;
 

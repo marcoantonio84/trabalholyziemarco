@@ -4,7 +4,7 @@ package unigran.br.projetoodonto.Cadastro;
 
 import dto.DTO;
 import dto.FuncionarioDTO;
-import unigran.br.projetoodonto.Cadastro.Painel;
+import Telas.Painel;
 
 
 public class CadastroFuncionario extends Painel{
