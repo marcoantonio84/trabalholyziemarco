@@ -3,7 +3,7 @@ package unigran.br.projetoodonto.Cadastro;
 import Controller.Controller;
 import java.awt.BorderLayout;
 import javax.swing.JOptionPane;
-import unigran.br.projetoodonto.Cadastro.Painel;
+import Telas.Painel;
 
 
 public class Cadastro extends javax.swing.JDialog {

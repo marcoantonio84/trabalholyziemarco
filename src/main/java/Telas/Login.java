@@ -1,4 +1,4 @@
-package unigran.br.projetoodonto.Cadastro;
+package Telas;
 
 
 import Controller.Controller;

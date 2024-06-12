@@ -1,4 +1,4 @@
-package unigran.br.projetoodonto.Cadastro;
+package Telas;
 
 import Controller.ConsultasController;
 import Controller.FuncionarioController;
@@ -7,12 +7,19 @@ import Controller.MateriaisController;
 import Controller.PacienteController;
 import javax.swing.JFrame;
 import unigran.br.projetoodonto.Cadastro.Cadastro;
+import unigran.br.projetoodonto.Cadastro.Cadastro;
 import unigran.br.projetoodonto.Cadastro.Listagem;
 import unigran.br.projetoodonto.Cadastro.CadastroConsulta;
+import unigran.br.projetoodonto.Cadastro.CadastroConsulta;
+import unigran.br.projetoodonto.Cadastro.CadastroFuncionario;
 import unigran.br.projetoodonto.Cadastro.CadastroFuncionario;
 import unigran.br.projetoodonto.Cadastro.CadastroLogin;
+import unigran.br.projetoodonto.Cadastro.CadastroLogin;
+import unigran.br.projetoodonto.Cadastro.CadastroMateriais;
 import unigran.br.projetoodonto.Cadastro.CadastroMateriais;
 import unigran.br.projetoodonto.Cadastro.CadastroPaciente;
+import unigran.br.projetoodonto.Cadastro.CadastroPaciente;
+import unigran.br.projetoodonto.Cadastro.Listagem;
 
 public class MenuPrincipal extends javax.swing.JFrame {
 

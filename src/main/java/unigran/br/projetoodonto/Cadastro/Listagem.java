@@ -9,7 +9,7 @@ import java.util.List;
 import Controller.Controller;
 import Controller.PacienteController;
 import dto.DTO;
-import unigran.br.projetoodonto.Cadastro.Painel;
+import Telas.Painel;
 
 
 public class Listagem extends javax.swing.JFrame {

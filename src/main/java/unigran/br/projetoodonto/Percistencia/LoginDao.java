@@ -1,6 +1,6 @@
 package unigran.br.projetoodonto.Percistencia;
 
-import unigran.br.projetoodonto.Cadastro.Login;
+import Telas.Login;
 import java.util.List;
 import org.json.JSONObject;
 import unigran.br.projetoodonto.Percistencia.Dao;
